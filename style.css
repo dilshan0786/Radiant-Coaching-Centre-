@@ -111,75 +111,38 @@ button:active{
 }
 
 .img1{
-  background: url(img1.jpeg);
+  background: url(9th.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
 }
 .img2{
-  background: url(img2.jpg);
+  background: url(9th.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .img3{
-  background: url(img3.jpeg);
+  background: url(9th.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
 }
 .img4{
-  background: url(img4.png);
+  background: url(10th.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
 }
 .img5{
-  background: url(img5.jpg);
+  background: url(10th.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .img6{
-  background: url(img6.png);
+  background: url(10th.jpg);
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.img7{
-  background: url(img7.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.img8{
-  background: url(img8.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.img9{
-  background: url(img9.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.img7{
-  background: url(img7.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.img11{
-  background: url(img8.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.img12{
-  background: url(img9.png);
-  background-size: cover;
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
 }
