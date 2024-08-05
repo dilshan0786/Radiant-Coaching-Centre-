@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class 10 Subjects</title>
+<link rel="stylesheet" href="10th.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Class: <span class="year">10<sup>th</sup></span></h1>
+    </header>
+
+    <section class="subject-section">
+      <div class="subject" onclick="toggleVisibility('chemistry-chapters')">
+        <h2>Chemistry</h2>
+      </div>
+      <div id="chemistry-chapters" class="chapter-list hidden">
+        <div class="chapter" onclick="toggleChapterButtons('chemistry-chapter1-buttons', event)">
+          <h3>Chapter 1 : रासायनिक अभिक्रियाएँ एवं समीकरण</h3>
+        </div>
+        <div id="chemistry-chapter1-buttons" class="buttons hidden">
+          <button class="notes-btn">Objective</button>
+        
+        </div>
+        
+        
+        <div class="chapter" onclick="toggleChapterButtons('chemistry-chapter2-buttons', event)">
+          <h3>Chapter 2 : अम्ल , भस्म तथा लवण</h3>
+        </div>
+        <div id="chemistry-chapter2-buttons" class="buttons hidden">
+          <button class="notes-btn" onclick="window.location.href='C2notes.html'">Notes</button>
+          <button class="notes-btn" onclick="window.location.href='C2_summary.html'">Summary</button>
+          <button class="notes-btn" onclick="window.location.href='C2_Soluction.html'"> भारती भवन All Questions Solution</button>
+          <button class="notes-btn" onclick="window.location.href='C2_objective.html'">Objective</button>
+        
+        </div>
+        <!-- Repeat for other chapters -->
+      </div>
+
+      <div class="subject" onclick="toggleVisibility('physics-chapters')">
+        <h2>Physics</h2>
+      </div>
+      <div id="physics-chapters" class="chapter-list hidden">
+        <div class="chapter" onclick="toggleChapterButtons('physics-chapter1-buttons', event)">
+          <h3>Chapter 1</h3>
+        </div>
+        <div id="physics-chapter1-buttons" class="buttons hidden">
+          <button class="notes-btn">Notes</button>
+          
+        </div>
+        <!-- Repeat for other chapters -->
+      </div>
+
+      <div class="subject" onclick="toggleVisibility('biology-chapters')">
+        <h2>Biology</h2>
+      </div>
+      <div id="biology-chapters" class="chapter-list hidden">
+        <div class="chapter" onclick="toggleChapterButtons('biology-chapter1-buttons', event)">
+          <h3>Chapter 1</h3>
+        </div>
+        <div id="biology-chapter1-buttons" class="buttons hidden">
+          <button class="notes-btn">Notes</button>
+          
+        </div>
+        <!-- Repeat for other chapters -->
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function toggleVisibility(id) {
+      const element = document.getElementById(id);
+      const isHidden = element.classList.contains('hidden');
+
+      // Hide all chapter lists
+      document.querySelectorAll('.chapter-list').forEach(list => list.classList.add('hidden'));
+
+      // Toggle the clicked subject's chapter list
+      if (isHidden) {
+        element.classList.remove('hidden');
+      } else {
+        element.classList.add('hidden');
+      }
+    }
+
+    function toggleChapterButtons(id, event) {
+      event.stopPropagation(); // Prevent event from bubbling up to subject
+
+      const element = document.getElementById(id);
+      const isHidden = element.classList.contains('hidden');
+
+      // Hide all chapter buttons
+      document.querySelectorAll('.buttons').forEach(btn => btn.classList.add('hidden'));
+
+      // Toggle the clicked chapter's buttons
+      if (isHidden) {
+        element.classList.remove('hidden');
+      } else {
+        element.classList.add('hidden');
+      }
+    }
+  </script>
+</body>
+</html>

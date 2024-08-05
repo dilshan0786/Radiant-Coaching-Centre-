@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #4CAF50;
+        }
+
+        h2 {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .question {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+
+        .options {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .options li {
+            padding: 10px;
+            margin-bottom: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            background: #e0f7fa;
+        }
+
+        .options li:hover {
+            background: #b2ebf2;
+        }
+
+        .options li.correct {
+            background: #c8e6c9;
+            border-color: #4CAF50;
+            color: #1b5e20;
+        }
+
+        .options li.incorrect {
+            background: #ffcdd2;
+            border-color: #f44336;
+            color: #d32f2f;
+        }
+
+        .options li.selected {
+            border-color: #1e88e5;
+            background: #bbdefb;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Radiant Coaching Centre</h1>
+    <h2>Provided by Dilshan Alam</h2>
+
+    <div class="question">
+    <p>1. कोई विलयन लाल लिटमस को नीला कर देता है, इसका pH संभवतः क्या होगा?</p>
+    <ul class="options">
+        <li data-correct="false">1</li>
+        <li data-correct="false">4</li>
+        <li data-correct="false">5</li>
+        <li data-correct="true">10</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>2. एसीटिक अम्ल का तनु विलयन के बारे में कौन-सा अवलोकन सत्य है?</p>
+    <ul class="options">
+        <li data-correct="true">यह सिरका सी गंध देता है</li>
+        <li data-correct="false">यह प्याज सी गंध देता है</li>
+        <li data-correct="false">यह सड़े अंडे सी गंध देता है</li>
+        <li data-correct="false">यह सड़े मांस सी गंध देता है</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>3. ऐल्कोहाल में उबली पत्ती पर आयोडीन विलयन की कुछ बूँद डालने पर पत्ती का रंग हो जाता है:</p>
+    <ul class="options">
+        <li data-correct="false">गुलाबी</li>
+        <li data-correct="false">नीला</li>
+        <li data-correct="true">नीला-काला</li>
+        <li data-correct="false">काला</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>4. अपच का उपचार करने के लिए निम्न में से किस औषधी का उपयोग होता है?</p>
+    <ul class="options">
+        <li data-correct="false">एंटीबायोटिक (प्रतिजैविक)</li>
+        <li data-correct="false">ऐनालजेसिक (पीड़ाहारी)</li>
+        <li data-correct="true">ऐन्टासिड</li>
+        <li data-correct="false">एंटीसेष्टिक (प्रतिरोधी)</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>5. किसी भी उदासीन विलयन का pH होता है।</p>
+    <ul class="options">
+        <li data-correct="false">5</li>
+        <li data-correct="true">7</li>
+        <li data-correct="false">14</li>
+        <li data-correct="false">0</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>6. निम्नांकित में से कौन लवण है:</p>
+    <ul class="options">
+        <li data-correct="false">HCl</li>
+        <li data-correct="false">NaOH</li>
+        <li data-correct="true">K<sub>2</sub>SO<sub>4</sub></li>
+        <li data-correct="false">NH<sub>4</sub>OH</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>7. किसी लाल तप्त आयरन पर जलवाष्प प्रवाहित करने पर कौन-सा यौगिक प्राप्त होता है?</p>
+    <ul class="options">
+        <li data-correct="false">FeO</li>
+        <li data-correct="false">Fe<sub>2</sub>O<sub>3</sub></li>
+        <li data-correct="true">Fe<sub>3</sub>O<sub>4</sub></li>
+        <li data-correct="false">FeS</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>8. हमारे शरीर में pH कितने परास के बीच कार्य करता है?</p>
+    <ul class="options">
+        <li data-correct="false">6.0 से 6.8</li>
+        <li data-correct="false">7.0 से 7.8</li>
+        <li data-correct="false">2.1 से 3.8</li>
+        <li data-correct="true">5.1 से 5.8</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>9. बेकिंग पाउडर का अणुसूत्र क्या है?</p>
+    <ul class="options">
+        <li data-correct="false">Na<sub>2</sub>CO<sub>3</sub></li>
+        <li data-correct="false">CaCO<sub>3</sub></li>
+        <li data-correct="true">NaHCO<sub>3</sub></li>
+        <li data-correct="false">NaNO<sub>3</sub></li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>10. निम्नलिखित में कौन विजातीय यौगिक है?</p>
+    <ul class="options">
+        <li data-correct="false">चूना पत्थर</li>
+        <li data-correct="false">खड़िया</li>
+        <li data-correct="false">संगमरमर</li>
+        <li data-correct="true">प्लास्टर ऑफ पेरिस</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>11. निम्नलिखित में से pH का कौन सा मान क्षारक विलयन का मान देता है?</p>
+    <ul class="options">
+        <li data-correct="false">2</li>
+        <li data-correct="false">7</li>
+        <li data-correct="false">6</li>
+        <li data-correct="true">13</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>12. सोडियम क्लोराइड के जलीय विलयन से विद्युत-धारा प्रवाहित करने पर यह वियोजित होकर सोडियम हाइड्रॉक्साइड बनता है। इस प्रक्रिया को कहते हैं?</p>
+    <ul class="options">
+        <li data-correct="false">क्लोर क्षार अभिक्रिया</li>
+        <li data-correct="false">क्लोर अभिक्रिया</li>
+        <li data-correct="true">वियोजन अभिक्रिया</li>
+        <li data-correct="false">संयोजन अभिक्रिया</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>13. निम्नलिखित अम्लों में से कौन प्रबल अम्ल है?</p>
+    <ul class="options">
+        <li data-correct="false">लैक्टिक अम्ल</li>
+        <li data-correct="false">ऐस्कॉरबिक अम्ल</li>
+        <li data-correct="true">सल्फ्यूरिक अम्ल</li>
+        <li data-correct="false">फॉर्मिक अम्ल</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>14. निम्नलिखित में कौन क्षारक नहीं है?</p>
+    <ul class="options">
+        <li data-correct="false">KOH</li>
+        <li data-correct="false">Al(OH)<sub>3</sub></li>
+        <li data-correct="true">NaCl</li>
+        <li data-correct="false">Cu(OH)<sub>2</sub></li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>15. निम्नलिखित क्षारकों में कौन प्रबल क्षारक है?</p>
+    <ul class="options">
+        <li data-correct="false">NH<sub>4</sub>OH</li>
+        <li data-correct="true">NaOH</li>
+        <li data-correct="false">Mg(OH)<sub>2</sub></li>
+        <li data-correct="false">Cu(OH)<sub>2</sub></li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>16. लिटमस विलयन जो बैंगनी रंग का रंजक होता है यह किस पदार्थ का बना होता है?</p>
+    <ul class="options">
+        <li data-correct="false">कवक</li>
+        <li data-correct="true">लिचेन</li>
+        <li data-correct="false">जिम्न्नोस्पर्म</li>
+        <li data-correct="false">इनमें से कोई नहीं</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>17. निम्नलिखित में से कौन सूचक की तरह इस्तेमाल नहीं किया जा सकता है?</p>
+    <ul class="options">
+        <li data-correct="false">मेथिलॉरेंज</li>
+        <li data-correct="false">फीनॉल्फथेलिन</li>
+        <li data-correct="false">हल्दी</li>
+        <li data-correct="true">मूली</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>18. निम्नलिखित में से कौन गंधीय सूचक नहीं है?</p>
+    <ul class="options">
+        <li data-correct="false">वैनिला</li>
+        <li data-correct="false">प्याज</li>
+        <li data-correct="false">सकरकन्द</li>
+        <li data-correct="true">लौंग का तेल</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>19. निम्नलिखित में से कौन द्विक्षारकीय अम्ल है?</p>
+    <ul class="options">
+        <li data-correct="false">HCl</li>
+        <li data-correct="true">H<sub>3</sub>PO<sub>4</sub></li>
+        <li data-correct="false">HNO<sub>3</sub></li>
+        <li data-correct="false">H<sub>2</sub>SO<sub>4</sub></li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>20. पोटाश एलम होते हैं?</p>
+    <ul class="options">
+        <li data-correct="false">एक साधारण लवण</li>
+        <li data-correct="false">एक मिश्रित लवण</li>
+        <li data-correct="true">एक अम्लीय लवण</li>
+        <li data-correct="false">एक दिक् लवण</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>21. ऐसीटिक अम्ल एक दुर्बल अम्ल है, क्योंकि</p>
+    <ul class="options">
+        <li data-correct="false">इसके जलीय विलयन अम्लीय होते हैं</li>
+        <li data-correct="false">यह ज्यादा आयनित होते हैं</li>
+        <li data-correct="true">ये कम आयनित होते हैं</li>
+        <li data-correct="false">ये -COOH समूह रखते हैं</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>22. निम्नलिखित में सबसे प्रबल लवण कौन है?</p>
+    <ul class="options">
+        <li data-correct="false">NaCl</li>
+        <li data-correct="true">BaSO<sub>4</sub></li>
+        <li data-correct="false">CaCl<sub>2</sub></li>
+        <li data-correct="false">LiCl</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>23. दाँतों को साफ करने के लिए दंत-मंजन (टूथ पेस्ट) प्रायः होता है?</p>
+    <ul class="options">
+        <li data-correct="true">क्षारीय</li>
+        <li data-correct="false">अम्लीय</li>
+        <li data-correct="false">लवणयुक्त</li>
+        <li data-correct="false">इनमें से कोई नहीं</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>24. शुद्ध जल का pH मान होता है:</p>
+    <ul class="options">
+        <li data-correct="false">6</li>
+        <li data-correct="true">7</li>
+        <li data-correct="false">8</li>
+        <li data-correct="false">9</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>25. जब CO<sub>2</sub> गैस को पानी में घोला जाता है, तो विलयन का pH मान होता है:</p>
+    <ul class="options">
+        <li data-correct="false">7 से अधिक</li>
+        <li data-correct="false">7</li>
+        <li data-correct="true">7 से कम</li>
+        <li data-correct="false">इनमें से कोई नहीं</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>26. निम्न में से कौन से धातु ठंडे जल से अभिक्रिया कर धातु के हाइड्रॉक्साइड बनायेंगे?</p>
+    <ul class="options">
+        <li data-correct="true">सोडियम एवं पोटाशियम</li>
+        <li data-correct="false">मैग्नीशियम एवं कैल्शियम</li>
+        <li data-correct="false">सोडियम एवं कॉपर</li>
+        <li data-correct="false">इनमें से कोई नहीं</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>27. निम्नलिखित में किस विलयन का उपयोग दीवारों को सफेदी करने के लिए किया जाता है?</p>
+    <ul class="options">
+        <li data-correct="false">Ca(HCO<sub>3</sub>)<sub>2</sub></li>
+        <li data-correct="true">Ca(OH)<sub>2</sub></li>
+        <li data-correct="false">Na(OH)</li>
+        <li data-correct="false">Na(HCO<sub>3</sub>)</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>28. निम्नलिखित में से कौन सा बुझा हुआ चूना है?</p>
+    <ul class="options">
+        <li data-correct="false">CaO</li>
+        <li data-correct="true">Ca(OH)<sub>2</sub></li>
+        <li data-correct="false">CaCO<sub>3</sub></li>
+        <li data-correct="false">Ca</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>29. लवण Na<sub>2</sub>CO<sub>3</sub> का जलीय विलयन का pH है</p>
+    <ul class="options">
+        <li data-correct="false">7</li>
+        <li data-correct="true">7 से अधिक</li>
+        <li data-correct="false">7 से कम</li>
+        <li data-correct="false">इनमें से कोई नहीं</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>30. ऐसिटिक अम्ल का नाम है:</p>
+    <ul class="options">
+        <li data-correct="true">ऐथेनॉइक अम्ल</li>
+        <li data-correct="false">मेथेनॉइक अम्ल</li>
+        <li data-correct="false">प्रोपेनोन</li>
+        <li data-correct="false">इनमें से कोई नहीं</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>31. निम्नलिखित में कौन-सा आयन लाल लिटमस को नीला कर सकता है?</p>
+    <ul class="options">
+        <li data-correct="false">H<sup>+</sup></li>
+        <li data-correct="true">OH<sup>-</sup></li>
+        <li data-correct="false">Cl<sup>-</sup></li>
+        <li data-correct="false">O<sub>2</sub><sup>-</sup></li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>32. कोई विलयन नीले लिटमस पत्र को लाल कर देता है, इसका pH संभवतः होगा:</p>
+    <ul class="options">
+        <li data-correct="true">5</li>
+        <li data-correct="false">7</li>
+        <li data-correct="false">9</li>
+        <li data-correct="false">10</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>33. ऑक्सैलीक अम्ल का प्राकृतिक श्रोत निम्नलिखित में कौन है?</p>
+    <ul class="options">
+        <li data-correct="false">संतरा</li>
+        <li data-correct="false">टमाटर</li>
+        <li data-correct="false">सिरका</li>
+        <li data-correct="true">इमली</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>34. एक छात्र जाँच परखनली में लिए गए सोडियम बाइकार्बोनेट के तनु विलयन में सार्वभौम सूचक की कुछ बूँद मिलाता है, तो निम्नलिखित में कौन-सा रंग दिखेगा?</p>
+    <ul class="options">
+        <li data-correct="false">नीला</li>
+        <li data-correct="false">हरा</li>
+        <li data-correct="false">नारंगी</li>
+        <li data-correct="true">पीला</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>35. एक जाँच परखनली में लिए गए विलयन में एक लोहे की कील को डुबाया गया। आधे घंटे के बाद यह देखा गया कि विलयन का रंग परिवर्तित हो चुका है। उस जाँच परखनली में विलयन था:</p>
+    <ul class="options">
+        <li data-correct="false">ZnSO<sub>4</sub></li>
+        <li data-correct="false">CuSO<sub>4</sub></li>
+        <li data-correct="true">FeSO<sub>4</sub></li>
+        <li data-correct="false">Al<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub></li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>36. प्लास्टर ऑफ पेरिस का रासायनिक सूत्र है:</p>
+    <ul class="options">
+        <li data-correct="false">CaSO<sub>4</sub>.2H<sub>2</sub>O</li>
+        <li data-correct="true">CaSO<sub>4</sub>.1/2H<sub>2</sub>O</li>
+        <li data-correct="false">Na<sub>2</sub>.10H<sub>2</sub>O</li>
+        <li data-correct="false">इनमें से कोई नहीं</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>37. लिटमस विलयन जब न तो अम्लीय होता है और न ही क्षारीय, तब यह किस रंग का होता है:</p>
+    <ul class="options">
+        <li data-correct="false">लाल</li>
+        <li data-correct="false">नीला</li>
+        <li data-correct="true">बैंगनी</li>
+        <li data-correct="false">काला</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>38. कुछ ऐसे पदार्थ होते हैं जिनकी गंध अम्लीय या क्षारकीय माध्यम में बदल जाती है इन्हें कहते हैं:</p>
+    <ul class="options">
+        <li data-correct="false">रंगीय सूचक</li>
+        <li data-correct="true">गंधीय सूचक</li>
+        <li data-correct="false">उदासीन</li>
+        <li data-correct="false">इनमें से कोई नहीं</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>39. सभी धातु कार्बोनेट एवं हाइड्रोजनकार्बोनेट अम्ल के साथ अभिक्रिया करके बनाते हैं:</p>
+    <ul class="options">
+        <li data-correct="false">संगत लवण</li>
+        <li data-correct="true">कार्बन डाईऑक्साइड</li>
+        <li data-correct="false">जल</li>
+        <li data-correct="true">इनमें सभी</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>40. सभी अम्लों में पाया जाता है:</p>
+    <ul class="options">
+        <li data-correct="false">ऑक्सीजन</li>
+        <li data-correct="true">हाइड्रोजन</li>
+        <li data-correct="false">कैल्शियम</li>
+        <li data-correct="false">नाइट्रोजन</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>41. हाइड्रोजन युक्त सभी यौगिक होते हैं:</p>
+    <ul class="options">
+        <li data-correct="false">अम्लीय</li>
+        <li data-correct="false">क्षारीय</li>
+        <li data-correct="true">दोनों</li>
+        <li data-correct="false">इनमें से कोई नहीं</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>42. जल में घुलनशील क्षारक के बारे में क्या सत्य है:</p>
+    <ul class="options">
+        <li data-correct="true">इन्हें क्षार कहते हैं</li>
+        <li data-correct="false">स्वाद कड़वा होता है</li>
+        <li data-correct="false">प्राकृतिक संक्षारक होती है</li>
+        <li data-correct="false">इनमें सभी</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>43. pH में P सूचक है:</p>
+    <ul class="options">
+        <li data-correct="false">पुसांस</li>
+        <li data-correct="true">पावर</li>
+        <li data-correct="false">दोनों</li>
+        <li data-correct="false">इनमें से कोई नहीं</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>44. ऐसिटिक अम्ल का प्राकृतिक श्रोत निम्नलिखित में से कौन है?</p>
+    <ul class="options">
+        <li data-correct="false">संतरा</li>
+        <li data-correct="true">सिरका</li>
+        <li data-correct="false">इमली</li>
+        <li data-correct="false">टमाटर</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>45. सिट्रिक अम्ल का प्राकृतिक श्रोत है:</p>
+    <ul class="options">
+        <li data-correct="false">इमली</li>
+        <li data-correct="false">टमाटर</li>
+        <li data-correct="true">संतरा, नींबू</li>
+        <li data-correct="false">दही</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>46. टार्टरिक अम्ल इनमें से किसमें पाया जाता है?</p>
+    <ul class="options">
+        <li data-correct="false">टमाटर</li>
+        <li data-correct="true">इमली</li>
+        <li data-correct="false">दही</li>
+        <li data-correct="false">सिरका</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>47. लैक्टिक अम्ल का प्राकृतिक श्रोत है:</p>
+    <ul class="options">
+        <li data-correct="true">दही</li>
+        <li data-correct="false">इमली</li>
+        <li data-correct="false">सिरका</li>
+        <li data-correct="false">टमाटर</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>48. चींटी के डंक और नेटल के डंक में कौन-सा अम्ल पाया जाता है?</p>
+    <ul class="options">
+        <li data-correct="false">सिट्रिक अम्ल</li>
+        <li data-correct="false">लैक्टिक अम्ल</li>
+        <li data-correct="true">ऐसिटिक अम्ल</li>
+        <li data-correct="false">मेथैनॉइक अम्ल</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>49. दाँतों का क्षय कब प्रारंभ होता है?</p>
+    <ul class="options">
+        <li data-correct="false">मुँह का pH 5.5 से अधिक होने पर</li>
+        <li data-correct="true">मुँह का pH 5.5 से कम होने पर</li>
+        <li data-correct="false">मुँह का pH 7 होने पर</li>
+        <li data-correct="false">इनमें से कोई नहीं</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>50. हमारे पेट (उदर) से कौन-सा अम्ल उत्पन्न होता है?</p>
+    <ul class="options">
+        <li data-correct="false">ऑक्सेलिक अम्ल</li>
+        <li data-correct="false">सिट्रिक अम्ल</li>
+        <li data-correct="true">हाइड्रोक्लोरिक अम्ल</li>
+        <li data-correct="false">टार्टरिक अम्ल</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>51. हाइड्रोक्लोरिक अम्ल एवं सोडियम हाइड्रोक्साइड के विलयन की अभिक्रिया से उत्पन्न लवण को क्या कहते हैं?</p>
+    <ul class="options">
+        <li data-correct="false">हाइड्रोजन क्लोराइड</li>
+        <li data-correct="true">सोडियम क्लोराइड</li>
+        <li data-correct="false">हाइड्रोक्साइड</li>
+        <li data-correct="false">इनमें से कोई नहीं</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>52. धोने का सोडा का रासायनिक सूत्र है:</p>
+    <ul class="options">
+      <li data-correct="false">Na<sub>2</sub>CO<sub>3</sub>.10H<sub>2</sub>O</li>
+        <li data-correct="false">Na<sub>2</sub>CO.H<sub>2</sub>O</li>
+        <li data-correct="false">NaCO<sub>3</sub>.10H<sub>2</sub>O</li>
+        <li data-correct="true">Na<sub>2</sub>CO<sub>3</sub>.10H<sub>2</sub>O</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>53. बेकिंग सोडा का रासायनिक नाम है:</p>
+    <ul class="options">
+        <li data-correct="false">सोडियम कार्बोनेट</li>
+        <li data-correct="true">सोडियम हाइड्रोजन कार्बोनेट</li>
+        <li data-correct="false">कैल्शियम कार्बोनेट</li>
+        <li data-correct="false">कैल्शियम हाइड्रोजनकार्बोनेट</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>54. पोटाशियम नाइट्रेट का रासायनिक सूत्र है:</p>
+    <ul class="options">
+        <li data-correct="false">Na<sub>2</sub>CO<sub>3</sub></li>
+        <li data-correct="false">NH<sub>4</sub>Cl</li>
+        <li data-correct="true">KNO<sub>3</sub></li>
+        <li data-correct="false">NaCl</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>55. जल की स्थाई कठोरता को हटाने के लिए किसका उपयोग किया जाता है?</p>
+    <ul class="options">
+        <li data-correct="false">बेकिंग सोडा</li>
+        <li data-correct="true">धोने का सोडा</li>
+        <li data-correct="false">विरंजक चूर्ण</li>
+        <li data-correct="false">इनमें से कोई नहीं</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>56. सोडा-ऐसिड अग्निशामक में किसका उपयोग किया जाता है?</p>
+    <ul class="options">
+        <li data-correct="false">सोडियम कार्बोनेट</li>
+        <li data-correct="false">कैल्शियम कार्बोनेट</li>
+        <li data-correct="true">सोडियम हाइड्रोजनकार्बोनेट</li>
+        <li data-correct="false">कैल्शियम बाई कार्बोनेट</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>57. सल्फेट अर्धहाइड्रेट / हेमीहाइड्रेट का अन्य नाम है:</p>
+    <ul class="options">
+        <li data-correct="true">जिप्सम</li>
+        <li data-correct="false">प्लास्टर ऑफ पेरिस</li>
+        <li data-correct="false">विरंजक चूर्ण</li>
+        <li data-correct="false">इनमें से कोई नहीं</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>58. जिप्सम का रासायनिक सूत्र है:</p>
+    <ul class="options">
+        <li data-correct="false">NaHO<sub>3</sub>.H<sub>2</sub>O</li>
+        <li data-correct="true">CaSO<sub>4</sub>.2H<sub>2</sub>O</li>
+        <li data-correct="false">CaSO<sub>4</sub>.1/2H<sub>2</sub>O</li>
+        <li data-correct="false">NaCl</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>59. फॉर्मिक अम्ल का IUPAC नाम है:</p>
+    <ul class="options">
+        <li data-correct="true">मेथेनाइक अम्ल</li>
+        <li data-correct="false">ऐथेनोइक अम्ल</li>
+        <li data-correct="false">प्रोपेनोइक अम्ल</li>
+        <li data-correct="false">इनमें से कोई नहीं</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>60. अम्ल का pH मान होता है:</p>
+    <ul class="options">
+        <li data-correct="true">7 से कम</li>
+        <li data-correct="false">7 से अधिक</li>
+        <li data-correct="false">7</li>
+        <li data-correct="false">14</li>
+    </ul>
+</div>
+
+<div class="question">
+    <p>61. निम्नलिखित में से कौन गैस चूने के पानी को दुधिया कर देता है?</p>
+    <ul class="options">
+        <li data-correct="false">Cl<sub>2</sub></li>
+        <li data-correct="false">SO<sub>2</sub></li>
+        <li data-correct="true">CO<sub>2</sub></li>
+        <li data-correct="false">O<sub>2</sub></li>
+    </ul>
+</div>
+
+
+ 
+
+<script>
+    document.querySelectorAll('.options li').forEach(option => {
+        option.addEventListener('click', function() {
+            // Remove existing 'selected' class and feedback
+            document.querySelectorAll('.options li').forEach(li => {
+                li.classList.remove('selected');
+                li.classList.remove('correct');
+                li.classList.remove('incorrect');
+            });
+            
+            // Add 'selected' class to clicked option
+            this.classList.add('selected');
+
+            // Check if the selected option is correct
+            if (this.getAttribute('data-correct') === 'true') {
+                this.classList.add('correct');
+            } else {
+                this.classList.add('incorrect');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
